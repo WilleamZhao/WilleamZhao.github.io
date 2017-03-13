@@ -44,15 +44,11 @@
     <link href="http://sourcod.com/2016/08/22/linux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://sourcod.com/2016/08/22/linux-常用命令/</id>
     <published>2016-08-22T01:14:22.000Z</published>
-    <updated>2017-03-13T04:29:40.594Z</updated>
+    <updated>2017-03-13T07:13:21.600Z</updated>
     
     <summary type="html">
     
-      &lt;ol&gt;
-&lt;li&gt;文件系统变成只读，root也不好使&lt;br&gt;&lt;code&gt;mount -o remount rw /&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;查看磁盘占用情况&lt;br&gt;&lt;code&gt;df -hl&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
+      &lt;p&gt;&lt;em&gt;系统信息&lt;/em&gt;&lt;br&gt;   &lt;code&gt;arch&lt;/code&gt; 显示机器的处理器架构(1)&lt;br&gt;   &lt;code&gt;uname -m&lt;/code&gt; 显示机器的处理器架构(2)&lt;br&gt;   &lt;code&gt;uname -r&lt;/code&gt; 显示正在使用的内核版本&lt;br&gt;   &lt;code&gt;dmidecode -q&lt;/code&gt; 显示硬件系统部件 - (SMBIOS / DMI)&lt;br&gt;   &lt;code&gt;hdparm -i /dev/hda&lt;/code&gt; 罗列一个磁盘的架构特性&lt;br&gt;   &lt;code&gt;hdparm -tT /dev/sda&lt;/code&gt; 在磁盘上执行测试性读取操作&lt;br&gt;   &lt;code&gt;cat /proc/cpuinfo&lt;/code&gt; 显示 CPU info 的信息&lt;br&gt;   &lt;code&gt;cat /proc/interrupts&lt;/code&gt; 显示中断&lt;br&gt;   &lt;code&gt;cat /proc/meminfo&lt;/code&gt; 校验内存使用&lt;br&gt;   &lt;code&gt;cat /proc/swaps&lt;/code&gt; 显示哪些 swap 被使用&lt;br&gt;   &lt;code&gt;cat /proc/version&lt;/code&gt; 显示内核的版本&lt;br&gt;   &lt;code&gt;cat /proc/net/dev&lt;/code&gt; 显示网络适配器及统计&lt;br&gt;   &lt;code&gt;cat /proc/mounts&lt;/code&gt; 显示已加载的文件系统&lt;br&gt;   &lt;code&gt;lspci -tv&lt;/code&gt; 罗列 PCI 设备&lt;br&gt;   &lt;code&gt;lsusb -tv&lt;/code&gt; 显示 USB 设备&lt;br&gt;   &lt;code&gt;date&lt;/code&gt; 显示系统日期&lt;br&gt;   &lt;code&gt;cal 2007&lt;/code&gt; 显示 2007 年的日历表&lt;br&gt;   &lt;code&gt;date 041217002007.00&lt;/code&gt; 设置日期和时间 - 月日时分年.秒&lt;br&gt;   &lt;code&gt;clock -w&lt;/code&gt; 将时间修改保存到 BIOS&lt;br&gt;
     
     </summary>
     
@@ -323,6 +319,35 @@
   </entry>
   
   <entry>
+    <title>使用凤蝶开发模板和区块</title>
+    <link href="http://sourcod.com/2016/05/23/%E4%BD%BF%E7%94%A8%E5%87%A4%E8%9D%B6%E5%BC%80%E5%8F%91%E6%A8%A1%E6%9D%BF%E5%92%8C%E5%8C%BA%E5%9D%97/"/>
+    <id>http://sourcod.com/2016/05/23/使用凤蝶开发模板和区块/</id>
+    <published>2016-05-23T02:02:39.000Z</published>
+    <updated>2017-03-13T04:29:40.594Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;简介：&quot;&gt;&lt;a href=&quot;#简介：&quot; class=&quot;headerlink&quot; title=&quot;简介：&quot;&gt;&lt;/a&gt;简介：&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;凤蝶是支付宝提供的，用来帮助运营同学快速发布和修改运营内容的平台&lt;/li&gt;
+&lt;li&gt;整个页面都可配置使用模板(例如：静态页面)&lt;/li&gt;
+&lt;li&gt;页面有自己的业务和可配置的需求使用区块(例如：车主服务首页)&lt;blockquote&gt;
+&lt;p&gt;凤蝶开发使用nunjucks模板语法，&lt;a href=&quot;https://mozilla.github.io/nunjucks/cn/templating.html&quot;&gt;Nunjucks&lt;/a&gt;&lt;br&gt;和velocity模板技术，可以看下 &lt;a href=&quot;http://www.ibm.com/developerworks/cn/java/j-lo-velocity1/&quot;&gt;使用 Velocity 模板引擎快速生成代码&lt;/a&gt; &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="fengdie" scheme="http://sourcod.com/tags/fengdie/"/>
+    
+      <category term="nodejs" scheme="http://sourcod.com/tags/nodejs/"/>
+    
+      <category term="velocity" scheme="http://sourcod.com/tags/velocity/"/>
+    
+  </entry>
+  
+  <entry>
     <title>My favorite gnome-shell-exception</title>
     <link href="http://sourcod.com/2016/05/22/My-favorite-gnome-shell-exception/"/>
     <id>http://sourcod.com/2016/05/22/My-favorite-gnome-shell-exception/</id>
@@ -432,24 +457,6 @@
       <category term="handsontable" scheme="http://sourcod.com/tags/handsontable/"/>
     
       <category term="jqwidgets" scheme="http://sourcod.com/tags/jqwidgets/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>easyui custom tags</title>
-    <link href="http://sourcod.com/2016/05/19/easyui-custom-tags/"/>
-    <id>http://sourcod.com/2016/05/19/easyui-custom-tags/</id>
-    <published>2016-05-19T10:18:18.000Z</published>
-    <updated>2017-03-13T04:29:40.594Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;easyui自定义标签-datagrid-edit-combobox-手动输入保存不上问题解决办法&quot;&gt;&lt;a href=&quot;#easyui自定义标签-datagrid-edit-combobox-手动输入保存不上问题解决办法&quot; class=&quot;headerlink&quot; t
-    
-    </summary>
-    
-    
-      <category term="easyui" scheme="http://sourcod.com/tags/easyui/"/>
     
   </entry>
   

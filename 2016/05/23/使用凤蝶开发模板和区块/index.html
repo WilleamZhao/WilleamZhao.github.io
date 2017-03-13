@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="easyui," />
+  <meta name="keywords" content="fengdie,nodejs,velocity," />
 
 
 
@@ -89,19 +89,42 @@
 
 
 
-<meta name="description" content="easyui自定义标签 datagrid edit combobox 手动输入保存不上问题解决办法   使用onEndEdit事件（该事件可以获取到editor对象，onAfterEdit事件获取不到Editor对象）   通过editor拿到输入数据并保存。
-1234567891011int ci = 0;for(Column col : columnList )&amp;#123;	for(Combo">
+<meta name="description" content="简介：
+凤蝶是支付宝提供的，用来帮助运营同学快速发布和修改运营内容的平台
+整个页面都可配置使用模板(例如：静态页面)
+页面有自己的业务和可配置的需求使用区块(例如：车主服务首页)
+凤蝶开发使用nunjucks模板语法，Nunjucks和velocity模板技术，可以看下 使用 Velocity 模板引擎快速生成代码">
 <meta property="og:type" content="article">
-<meta property="og:title" content="easyui custom tags">
-<meta property="og:url" content="http://sourcod.com/2016/05/19/easyui-custom-tags/index.html">
+<meta property="og:title" content="使用凤蝶开发模板和区块">
+<meta property="og:url" content="http://sourcod.com/2016/05/23/使用凤蝶开发模板和区块/index.html">
 <meta property="og:site_name" content="Sourcod">
-<meta property="og:description" content="easyui自定义标签 datagrid edit combobox 手动输入保存不上问题解决办法   使用onEndEdit事件（该事件可以获取到editor对象，onAfterEdit事件获取不到Editor对象）   通过editor拿到输入数据并保存。
-1234567891011int ci = 0;for(Column col : columnList )&amp;#123;	for(Combo">
+<meta property="og:description" content="简介：
+凤蝶是支付宝提供的，用来帮助运营同学快速发布和修改运营内容的平台
+整个页面都可配置使用模板(例如：静态页面)
+页面有自己的业务和可配置的需求使用区块(例如：车主服务首页)
+凤蝶开发使用nunjucks模板语法，Nunjucks和velocity模板技术，可以看下 使用 Velocity 模板引擎快速生成代码">
+<meta property="og:image" content="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_16:29:33.png">
+<meta property="og:image" content="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_16:30:53.png">
+<meta property="og:image" content="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_16:31:31.png">
+<meta property="og:image" content="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_16:31:57.png">
+<meta property="og:image" content="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_17:03:02.png">
+<meta property="og:image" content="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_17:53:21.png">
+<meta property="og:image" content="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_18:01:30.png">
+<meta property="og:image" content="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_18:08:48.png">
+<meta property="og:image" content="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_16:50:05.png">
+<meta property="og:image" content="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_17:38:06.png">
+<meta property="og:image" content="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_19:34:16.png">
+<meta property="og:image" content="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_19:36:03.png">
+<meta property="og:image" content="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_19:52:16.png">
 <meta property="og:updated_time" content="2017-03-13T04:29:40.594Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="easyui custom tags">
-<meta name="twitter:description" content="easyui自定义标签 datagrid edit combobox 手动输入保存不上问题解决办法   使用onEndEdit事件（该事件可以获取到editor对象，onAfterEdit事件获取不到Editor对象）   通过editor拿到输入数据并保存。
-1234567891011int ci = 0;for(Column col : columnList )&amp;#123;	for(Combo">
+<meta name="twitter:title" content="使用凤蝶开发模板和区块">
+<meta name="twitter:description" content="简介：
+凤蝶是支付宝提供的，用来帮助运营同学快速发布和修改运营内容的平台
+整个页面都可配置使用模板(例如：静态页面)
+页面有自己的业务和可配置的需求使用区块(例如：车主服务首页)
+凤蝶开发使用nunjucks模板语法，Nunjucks和velocity模板技术，可以看下 使用 Velocity 模板引擎快速生成代码">
+<meta name="twitter:image" content="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_16:29:33.png">
 
 
 
@@ -129,13 +152,13 @@
 
 
 
-  <link rel="canonical" href="http://sourcod.com/2016/05/19/easyui-custom-tags/"/>
+  <link rel="canonical" href="http://sourcod.com/2016/05/23/使用凤蝶开发模板和区块/"/>
 
 
 
 
 
-  <title> easyui custom tags | Sourcod </title>
+  <title> 使用凤蝶开发模板和区块 | Sourcod </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -328,7 +351,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://sourcod.com/2016/05/19/easyui-custom-tags/">
+    <link itemprop="mainEntityOfPage" href="http://sourcod.com/2016/05/23/使用凤蝶开发模板和区块/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="WilleamZhao">
@@ -349,7 +372,7 @@
             
             
               
-                easyui custom tags
+                使用凤蝶开发模板和区块
               
             
           </h1>
@@ -364,8 +387,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-19T18:18:18+08:00">
-                2016-05-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-23T10:02:39+08:00">
+                2016-05-23
               </time>
             
 
@@ -383,8 +406,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/05/19/easyui-custom-tags/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/19/easyui-custom-tags/" itemprop="commentCount"></span>
+                <a href="/2016/05/23/使用凤蝶开发模板和区块/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/23/使用凤蝶开发模板和区块/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -410,9 +433,86 @@
       
 
       
-        <h2 id="easyui自定义标签-datagrid-edit-combobox-手动输入保存不上问题解决办法"><a href="#easyui自定义标签-datagrid-edit-combobox-手动输入保存不上问题解决办法" class="headerlink" title="easyui自定义标签 datagrid edit combobox 手动输入保存不上问题解决办法"></a>easyui自定义标签 datagrid edit combobox 手动输入保存不上问题解决办法</h2><p>   使用onEndEdit事件（该事件可以获取到editor对象，onAfterEdit事件获取不到Editor对象）<br>   通过editor拿到输入数据并保存。</p>
-<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">int ci = 0;</div><div class="line">for(Column col : columnList )&#123;</div><div class="line">	for(Combobox cbb : col.getCombobox())&#123;</div><div class="line">		if(cbb != null)&#123;</div><div class="line">			str += &quot;var ed&quot; + ci + &quot; = $j(\&quot;#&quot;+RandomNumber+&quot;\&quot;).datagrid(\&quot;getEditor\&quot;,&#123;index:rowIndex,field:\&quot;&quot;+col.getField()+&quot;\&quot;&#125;);&quot;;</div><div class="line">			str += &quot;var val&quot; + ci + &quot; = ed&quot; + ci + &quot;.target.combobox(&apos;getText&apos;);&quot;;</div><div class="line">			str += &quot;rowData[\&quot;&quot; + col.getField() + &quot;\&quot;] = val&quot; + ci + &quot;;&quot;;</div><div class="line">			ci++;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</code></pre>
+        <h1 id="简介："><a href="#简介：" class="headerlink" title="简介："></a>简介：</h1><ul>
+<li>凤蝶是支付宝提供的，用来帮助运营同学快速发布和修改运营内容的平台</li>
+<li>整个页面都可配置使用模板(例如：静态页面)</li>
+<li>页面有自己的业务和可配置的需求使用区块(例如：车主服务首页)<blockquote>
+<p>凤蝶开发使用nunjucks模板语法，<a href="https://mozilla.github.io/nunjucks/cn/templating.html" target="_blank" rel="external">Nunjucks</a><br>和velocity模板技术，可以看下 <a href="http://www.ibm.com/developerworks/cn/java/j-lo-velocity1/" target="_blank" rel="external">使用 Velocity 模板引擎快速生成代码</a> </p>
+</blockquote>
+</li>
+</ul>
+<a id="more"></a>
+<h1 id="模板开发"><a href="#模板开发" class="headerlink" title="模板开发"></a>模板开发</h1><ul>
+<li>凤蝶初始化<br>执行 <code>fengdie init</code><ol>
+<li>选择模板包<br><img src="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_16:29:33.png" alt="使用凤蝶开发模板和区块_16-05-23_16:29:33.png"></li>
+<li>输入包名<br><img src="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_16:30:53.png" alt="使用凤蝶开发模板和区块_16-05-23_16:30:53.png"></li>
+<li>输入版本号<br><img src="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_16:31:31.png" alt="使用凤蝶开发模板和区块_16-05-23_16:31:31.png"></li>
+<li>输入标题<br><img src="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_16:31:57.png" alt="使用凤蝶开发模板和区块_16-05-23_16:31:57.png"><br><strong>初始化模板包结束</strong></li>
+</ol>
+</li>
+</ul>
+<h2 id="模板包目录结构如下"><a href="#模板包目录结构如下" class="headerlink" title="模板包目录结构如下:"></a>模板包目录结构如下:</h2><p><img src="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_17:03:02.png" alt="使用凤蝶开发模板和区块_16-05-23_17:03:02.png"></p>
+<h2 id="文件功能说明"><a href="#文件功能说明" class="headerlink" title="文件功能说明"></a>文件功能说明</h2><ol>
+<li>README.md    ——    模板使用说明文件</li>
+<li>dist目录    ——    静态文件存放目录</li>
+<li>fengdie.config.js    ——    凤蝶功能配置文件</li>
+<li>index.html    ——    应用首⻚文件</li>
+<li>layouts/default.html    ——    所有应用⻚面的布局文件</li>
+<li>package.json    ——    模板包的说明文件</li>
+<li>schemas/config.schema    ——    应用⻚面中可配置的内容描述文件</li>
+<li>schemas/config.json    ——    与config.schema对应mock数据文件</li>
+<li>snapshot.png    ——    模板在凤蝶上显示的缩略图</li>
+</ol>
+<!-- list partition line -->
+<h2 id="开发模板"><a href="#开发模板" class="headerlink" title="开发模板"></a>开发模板</h2><ol>
+<li>按照需求修改index.html文件<br><img src="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_17:53:21.png" alt="使用凤蝶开发模板和区块_16-05-23_17:53:21.png"></li>
+<li><p>修改schemacs/config.schema文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">Object(配置) &#123;</div><div class="line">  activities(车主服务活动): Array &#123;</div><div class="line">    href(活动链接),</div><div class="line">    title(标题),</div><div class="line">    statusImg(状态图片): Image,</div><div class="line">    img(图片地址): Image,</div><div class="line">    desc(描述): String</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>打包<br>进入凤蝶项目跟目录，执行<code>fengdie zip</code>命令</p>
+</li>
+<li><p>登录凤蝶系统上传模板包<br><img src="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_18:01:30.png" alt="使用凤蝶开发模板和区块_16-05-23_18:01:30.png"></p>
+</li>
+<li><p>这时在我的模板里就可以看到刚刚上传的模板包,点击模板就可以维护模板了<br><img src="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_18:08:48.png" alt="使用凤蝶开发模板和区块_16-05-23_18:08:48.png"></p>
+</li>
+<li><p>设置完模板数据点击编辑完成-&gt;发布,就可以使用模板了</p>
+</li>
+</ol>
+<p><strong>详细信息请查看凤蝶开发手册</strong></p>
+<h1 id="区块开发"><a href="#区块开发" class="headerlink" title="区块开发"></a>区块开发</h1><ol>
+<li>区块包初始化<br><code>fengdie init</code><br><strong>和模板包初始化相同</strong><br><img src="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_16:50:05.png" alt="使用凤蝶开发模板和区块_16-05-23_16:50:05.png"></li>
+</ol>
+<h2 id="区块包目录结构如下"><a href="#区块包目录结构如下" class="headerlink" title="区块包目录结构如下"></a>区块包目录结构如下</h2><p><img src="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_17:38:06.png" alt="使用凤蝶开发模板和区块_16-05-23_17:38:06.png"></p>
+<h2 id="文件功能说明-1"><a href="#文件功能说明-1" class="headerlink" title="文件功能说明"></a>文件功能说明</h2><ol>
+<li>README.md    ——    区块使用说明文件</li>
+<li>fengdie.config.js    ——    凤蝶功能配置文件</li>
+<li>package.json    ——    区块包的说明文件</li>
+<li>sample/asd.schema    ——    应用⻚面中可配置的内容描述文件</li>
+<li>topbars.vm    ——    代码片段文件</li>
+<li>snapshot.png    ——    区块包在凤蝶上显示的缩略图</li>
+</ol>
+<h2 id="开发区块"><a href="#开发区块" class="headerlink" title="开发区块"></a>开发区块</h2><ol>
+<li><p>修改topbars.vm文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">﻿&lt;!-- 区块模板样例 --&gt;</div><div class="line">&lt;!-- 1. schema 的使用 --&gt;</div><div class="line">&lt;!-- 1.1 引用路径从包目录开始 --&gt;</div><div class="line">&lt;!-- 1.2 使用指南请查看 https://site.alipay.net/fengdie/dev-guide/datum/schema.html --&gt;</div><div class="line">#cmsparse(&quot;vbizplatform/sample/ads.utf8.vm&quot;)</div><div class="line">#foreach($info in $fd_vbizplatform_sample_ads)</div><div class="line">&lt;li class=&quot;mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3&quot;&gt;</div><div class="line">#if($info.get(&quot;jiaobiao&quot;))</div><div class="line">&lt;img src=&quot;$info.get(&quot;jiaobiao&quot;)&quot; class=&quot;index-grid-9-new-icon&quot;&gt;</div><div class="line">#end</div><div class="line">#if($info.get(&quot;href&quot;))</div><div class="line">&lt;a href=&quot;$info.get(&quot;href&quot;))&quot;&gt;</div><div class="line">#end</div><div class="line">&lt;img src=&quot;$info.get(&quot;img&quot;)&quot; class=&quot;carui-img-height&quot;&gt;</div><div class="line">&lt;div class=&quot;mui-media-body carui-active-title&quot;&gt;$info.get(&quot;title&quot;)&lt;/div&gt;</div><div class="line">&lt;div class=&quot;mui-media-body carui-active-desc&quot;&gt;$info.get(&quot;desc&quot;)&lt;/div&gt;</div><div class="line">&lt;/a&gt;	</div><div class="line">#end</div><div class="line">&lt;!-- 2. 可以继续引入多个 schema --&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>修改ads.schema文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Array(viewnine) &#123;</div><div class="line">  href(跳转连接),</div><div class="line">  title(标题),</div><div class="line">  desc(描述),</div><div class="line">  img(图片路径),</div><div class="line">  jiaobiao(角标路径)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>上传区块包，并维护数据。<br><img src="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_19:34:16.png" alt="使用凤蝶开发模板和区块_16-05-23_19:34:16.png"></p>
+</li>
+<li><p>保存，同步到环境,提示执行成功。<br><img src="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_19:36:03.png" alt="使用凤蝶开发模板和区块_16-05-23_19:36:03.png"><br><strong>注意：</strong> 发布成功后，凤蝶系统，会把topbars.vm文件和生成的模板数据文件放到应用机器的<code>/home/admin/uiweb/fengdie/</code>目录下<br>(凤蝶系统先把区块包发到oss上，然后调用openapi通知ecs，ecs访问oss把凤蝶区块下载到<code>/home/admin/uiweb/fengdie/</code>目录下)<br><strong>模板数据文件:</strong><br><img src="http://img.sourcod.com/使用凤蝶开发模板和区块_16-05-23_19:52:16.png" alt="使用凤蝶开发模板和区块_16-05-23_19:52:16.png"></p>
+</li>
+<li><p>编写java代码解析,vm模板文件</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line">    * 根据vm模版动态生成html</div><div class="line">    * </div><div class="line">    * @return 生成后html代码</div><div class="line">    */</div><div class="line">   protected String invokeVelocityDynamicCreateHtml(String url) &#123;</div><div class="line">       //初始化并取得Velocity引擎</div><div class="line">       VelocityEngine ve = new VelocityEngine();</div><div class="line">       Properties pros = new Properties();</div><div class="line">       //取得velocity的上下文context</div><div class="line">       VelocityContext context = new VelocityContext();</div><div class="line">       StringWriter write = new StringWriter();</div><div class="line">       //取得velocity的模版</div><div class="line">       Template t = null;</div><div class="line">       try &#123;</div><div class="line">           InputStream is = BaseController.class.getClassLoader().getResourceAsStream(&quot;config/velocity.properties&quot;);</div><div class="line">           InputStreamReader in = new InputStreamReader(is);</div><div class="line">           pros.load(in);</div><div class="line">           ve.init(pros);</div><div class="line">           t = ve.getTemplate(url);</div><div class="line">           t.merge(context, write);</div><div class="line">       &#125; catch (Throwable e) &#123;</div><div class="line">           logger.error(&quot;根据velocity生成html异常&quot;, e);</div><div class="line">           return &quot;&quot;;</div><div class="line">       &#125;</div><div class="line">       logger.info(&quot;调用vm生成成功,html=&#123;&#125;&quot;, write.toString());</div><div class="line">       return write.toString();</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<p>我的velocity.properties配置文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">#encoding</div><div class="line">input.encoding=UTF-8</div><div class="line">output.encoding=UTF-8</div><div class="line">contentType=text/html;charset=UTF-8</div><div class="line"># 加载文件方式</div><div class="line"># resource.loader = file</div><div class="line"># 模版位置</div><div class="line">file.resource.loader.path = /home/admin/uiweb/fengdie</div><div class="line"># 是否缓存</div><div class="line">file.resource.loader.cache = true</div><div class="line"># 不输出日志文件</div><div class="line">runtime.log.logsystem.class=org.apache.velocity.runtime.log.NullLogChute</div><div class="line"># org.apache.velocity.runtime.log.NullLogChute</div></pre></td></tr></table></figure></p>
+<ol>
+<li>然后把生成的html代码输出到页面上。</li>
+</ol>
+<p><strong>*这里我使用的原生velocity解析，也可以使用<a href="https://www.cloud.alipay.com/docs/index.html" target="_blank" rel="external">SOFA-Lite</a></strong></p>
+<p><strong>详细信息请查看凤蝶开发手册</strong></p>
+
       
     </div>
 
@@ -456,7 +556,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/easyui/" rel="tag"># easyui</a>
+            <a href="/tags/fengdie/" rel="tag"># fengdie</a>
+          
+            <a href="/tags/nodejs/" rel="tag"># nodejs</a>
+          
+            <a href="/tags/velocity/" rel="tag"># velocity</a>
           
         </div>
       
@@ -469,8 +573,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/05/19/install-debian-gnome-chinese-fonts/" rel="next" title="install debian gnome chinese-fonts">
-                <i class="fa fa-chevron-left"></i> install debian gnome chinese-fonts
+              <a href="/2016/05/22/My-favorite-gnome-shell-exception/" rel="next" title="My favorite gnome-shell-exception">
+                <i class="fa fa-chevron-left"></i> My favorite gnome-shell-exception
               </a>
             
           </div>
@@ -479,8 +583,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/05/19/handsontable and jqwidgets-jqxdragdropbug/" rel="prev" title="handsontable组件和jqwidgets(jqxdragdrop组件)在一个页面产生调整宽高bug">
-                handsontable组件和jqwidgets(jqxdragdrop组件)在一个页面产生调整宽高bug <i class="fa fa-chevron-right"></i>
+              <a href="/2016/05/23/My-favorite-linux-tools/" rel="prev" title="My favorite linux tools">
+                My favorite linux tools <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -496,10 +600,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/05/19/easyui-custom-tags/"
-     data-title="easyui custom tags"
+        <div class="ds-share flat" data-thread-key="2016/05/23/使用凤蝶开发模板和区块/"
+     data-title="使用凤蝶开发模板和区块"
      data-content=""
-     data-url="http://sourcod.com/2016/05/19/easyui-custom-tags/">
+     data-url="http://sourcod.com/2016/05/23/使用凤蝶开发模板和区块/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -526,8 +630,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/05/19/easyui-custom-tags/"
-           data-title="easyui custom tags" data-url="http://sourcod.com/2016/05/19/easyui-custom-tags/">
+      <div class="ds-thread" data-thread-key="2016/05/23/使用凤蝶开发模板和区块/"
+           data-title="使用凤蝶开发模板和区块" data-url="http://sourcod.com/2016/05/23/使用凤蝶开发模板和区块/">
       </div>
     
   </div>
@@ -669,7 +773,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#easyui自定义标签-datagrid-edit-combobox-手动输入保存不上问题解决办法"><span class="nav-number">1.</span> <span class="nav-text">easyui自定义标签 datagrid edit combobox 手动输入保存不上问题解决办法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介："><span class="nav-number">1.</span> <span class="nav-text">简介：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#模板开发"><span class="nav-number">2.</span> <span class="nav-text">模板开发</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#模板包目录结构如下"><span class="nav-number">2.1.</span> <span class="nav-text">模板包目录结构如下:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件功能说明"><span class="nav-number">2.2.</span> <span class="nav-text">文件功能说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发模板"><span class="nav-number">2.3.</span> <span class="nav-text">开发模板</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#区块开发"><span class="nav-number">3.</span> <span class="nav-text">区块开发</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#区块包目录结构如下"><span class="nav-number">3.1.</span> <span class="nav-text">区块包目录结构如下</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件功能说明-1"><span class="nav-number">3.2.</span> <span class="nav-text">文件功能说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发区块"><span class="nav-number">3.3.</span> <span class="nav-text">开发区块</span></a></li></ol></li></ol></div>
             
 
           </div>
