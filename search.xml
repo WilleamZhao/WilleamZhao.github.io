@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title><![CDATA[emacs集成七牛云存储]]></title>
+      <url>%2F2016%2F10%2F23%2Femacs%E9%9B%86%E6%88%90%E4%B8%83%E7%89%9B%E4%BA%91%E5%AD%98%E5%82%A8%2F</url>
+      <content type="text"><![CDATA[** 安装七牛云qshell命令行工具 下载wget ‘http://devtools.qiniu.com/qshell-v1.8.1.zip‘ 解压文件unzip qshell-v1.8.1.zip 找到对应操作系统版本文件，复制到~/opt/qshell文件夹下 配置七牛密钥 上七牛云网站创建一个密钥 执行命令 qshell account Access Key Secret Key]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[linux 常用命令]]></title>
+      <url>%2F2016%2F08%2F22%2Flinux-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+      <content type="text"><![CDATA[文件系统变成只读，root也不好使mount -o remount rw / 查看磁盘占用情况df -hl]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[ubuntu搭建nexus,maven私有仓库.]]></title>
+      <url>%2F2016%2F08%2F20%2Fubuntu%E6%90%AD%E5%BB%BAnexus-maven%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93%2F</url>
+      <content type="text"></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[搭建debian服务器]]></title>
+      <url>%2F2016%2F08%2F08%2F%E6%90%AD%E5%BB%BAdebian%E6%9C%8D%E5%8A%A1%E5%99%A8%2F</url>
+      <content type="text"><![CDATA[配置sudo su - chmod -w /etc/sudoers vi /etc/sudoers 添加一行willeam ALL=(ALL:ALL) ALL 添加163源 上网查找对应版本的数据源 sudo vi /etc/apt/sources.list 把找到的源添加到文件后 sudo apt-get update 更新源 安装输入法 sudo apt-get install fcitx fcitx-config-gtk fcitx-ui-classic fcitx-frontend-gtk3 fcitx-ui-light 上网下载搜狗linux版输入法，安装。 配置固定ip sudo cp /etc/network/interfaces /etc/network/interfaces_20160812 sudo]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[使用poi把excel2003转成excel2007]]></title>
+      <url>%2F2016%2F08%2F06%2F%E4%BD%BF%E7%94%A8poi%E6%8A%8Aexcel2003%E8%BD%AC%E6%88%90excel2007%2F</url>
+      <content type="text"><![CDATA[使用poi把excel2003转成excel2007 由于老项目使用的是jxl导出excel2003技术，现在导出的数据量超过excel2003最大支持行数65536行，所以需要升级成excel2007.并把老的，已经生成完的转换为excel2007. 把已有使用jxl生成excel2003代码改为使用poi生成excel2007. 以前生成月度excel报表是读取每个代理商一个月的excel2003文件写到excel2007文件中，现在需要修改为读取excel2007. 把以前已经生成的excel2003修改为excel2007. 把esales页面系统，点击下载连接改为下载新excel2007连接。]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[debian8 安装 php]]></title>
+      <url>%2F2016%2F05%2F31%2Fdebian8-%E5%AE%89%E8%A3%85-php%2F</url>
+      <content type="text"><![CDATA[下载php7 解压 进入目录./confirure报错我们安装libxml2&amp;libxml2-devsudo apt-get install libxml2 libxml2-dev安装完执行./configure --prefix=/usr/local/phpsudo make &amp; sudo make install等待安装结束!OK! 添加模块 123456cd ~/opt/php/php-7.0.7/cd ./ext/mbstring/usr/local/php/php-7.0.7/bin/phpize./configure –with-php-config=/usr/local/php/php-7.0.7/bin/php-configmakemake install php参数12345678910111213141516171819202122232425262728293031323334353637383940./configure --prefix=/usr/local/php/php-5.3.5 \--with-config-file-path=/usr/local/php/php-5.3.5/etc \--with-config-file-scan-dir=/usr/local/php/php-5.3.5/etc/conf.d \--with-mcrypt \--with-mhash \--with-mysqli=mysqlnd \--with-pdo-mysql=mysqlnd \--with-gd \--with-iconv \--with-zlib \--with-curl \--with-jpeg-dir \--with-freetype-dir \--with-apxs2=/usr/local/apache/bin/apxs \--with-openssl \--with-xmlrpc \--with-gettext \--with-fpm-user=nginx \--with-fpm-group=nginx \--enable-fpm \--enable-cgi \--enable-xml \--enable-bcmath \--enable-inline-optimization \--enable-mbregex \--enable-mbstring \--enable-ftp \--enable-gd-native-ttf \--enable-pcntl \--enable-sockets \--enable-sysvmsg \--enable-sysvshm \--enable-shmop \--enable-zip \--enable-soap \--enable-session \--enable-opcache \--enable-climake &amp;&amp; make install phpinfo信息不显示解决方法：short_open_tag = On]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[debian8 安装 svn]]></title>
+      <url>%2F2016%2F05%2F30%2Fdebian8-%E5%AE%89%E8%A3%85-svn%2F</url>
+      <content type="text"><![CDATA[安装 apr 安装 apr-util 由于我电脑之前安装过httpd，所以以上两步略过！参照: debian install httpd service 安装 opensslCFLAGS=-fPIC ./config --prefix=/usr/local/openssl enable-shared 安装 sconspython setup.py install 安装 serfsudo scons PREFIX=/usr/local/serf APR=/usr/local/apr/bin/apr-1-config APU=/usr/local/apr-util/bin/apu-1-config OPENSSL=/usr/local/openssl 安装sqlite解压sqlite-amalgamation软件包到sqlite-amalgamation目录 安装 svn./configure --prefix=/usr/local/svn --with-apr=/usr/local/apr/bin/apr-1-config --with-apr-util=/usr/local/apr-util/bin/apu-1-config --with-serf=/usr/local/serf --with-openssl=/usr/local/openssl --enable-mod-activation 执行svn --version命令，如果有ra_serf说明svn支持http方式 svn 常用命令 检出 svn checkoutsvn checkout path(path是svn库地址)(简写命令svn co) 提交 svn commitsvn commit –m “日志信息”要提交的文件(简写命令svn ci) 删除文件 svn delete$&gt;svn delete path -m “删除理由“$&gt;svn delete http:// -m “删除理由”然后在本地svn update，本地对应的文件将会删除。 更新 svn update默认更新到最新版本命令：svn update file（简写命令svn up）$&gt;svn update file更新到指定版本$&gt;svn update –r m file 查看日志 svn logsvn log file 比较文件 svn diffsvn diff –r m:n file.c(m,n为相比较的版本号) svn还原和回退 svn revert/svn merge svn还原： 命令：svn revert file svn回退，需要通过合并的方法回退 命令：svn merge –r m:n path (从m版本回退到n版本) 然后提交（svn commit） 重新定位 svn relocatesvn switch --relocate 原svn库地址 新svn库地址 其它 导出（export）：使用此功能获取一个没有SVN控制信息的工作复本，导出的文件没有.svn文件，不可直接执行提交 导入（import）：将本地文件导入到服务器中，一般用于初始svn库目录时 清理（svn cleanup）：当Subversion操作中断时，会有一些残留的操作信息保留在工作复本中，这时需要进行清理才能够重新进行工作； 查看文件或目录状态（svn status）：查看工作副本中某一目录下文件和子目录的状态，【正常状态不显示；?：不在svn的控制中；M：内容被修改；C：发生冲突；A：预定加入到版本库；K：被锁定】 使用规范 日志书写规范日志内容长度要求10个字符以上，即5个汉字以上；日志内容要求体现操作内容，如：增加×××功能/ 修复×××问题/ 删除×××功能提交频率要求编译通过后提交一次]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[debian8 安装&配置 zsh]]></title>
+      <url>%2F2016%2F05%2F30%2Fdebian8-%E5%AE%89%E8%A3%85-%E9%85%8D%E7%BD%AE-zsh%2F</url>
+      <content type="text"><![CDATA[安装zshsudo apt-get install zsh 安装oh-my-zsh sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;安装完会出现如下界面 修改配置配置文件是~/.zshrc修改样式，修改配置文件ZSH_THEME=random我的样式af-magic修改插件，修改配置文件plugins=git ruby等，插件在~/.oh-my-zsh/plugins/ 目录下我的插件plugins=(git bundler rake ruby docker jump mvn node npm nyan python sudo svn themes web-search vi-mode )这时shell就变得很好看了！ 修改zsh为默认shell使用whereis zsh命令查看zsh路径使用chsh -s /bin/zsh命令修改修改默认shell,输入密码后重新登录。ok！]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[debian8 安装 mysql5.7]]></title>
+      <url>%2F2016%2F05%2F28%2Fdebian8-%E5%AE%89%E8%A3%85-mysql5-7%2F</url>
+      <content type="text"><![CDATA[deb包安装 下载mysql安装mysql服务 sudo apt-get install mysql-server安装mysql客户端 sudo apt-get install mysql-client]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[linux 安装 virtualbox]]></title>
+      <url>%2F2016%2F05%2F27%2Flinux-%E5%AE%89%E8%A3%85-virtualbox%2F</url>
+      <content type="text"><![CDATA[我是使用debian系统sudo apt-get install linux-headers-$(uname -r|sed &#39;s,[^-]*-[^-]*-,,&#39;) virtualbox 出现“Failed to open a session for the virtual machine windows7. VT-x is being used by another hypervisor”问题原因 virtualbox 和 kvm 虚拟机冲突。解决办法，卸载kvm虚拟机 先杀掉kvm进程 12ps -ef | grep kvm kill *** 卸载kvm模块 123lsmod | grep kvmsudo modprobe -r kvm-intelsudo modprobe -r kvm 卸载kvmsudo apt-get remove kvm* 这时重新启动virtualbox就ok了！]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[debian8 install ktorrent]]></title>
+      <url>%2F2016%2F05%2F26%2Fdebian8-install-ktorrent%2F</url>
+      <content type="text"></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[debian install httpd service]]></title>
+      <url>%2F2016%2F05%2F25%2Fdebian-install-httpd-service%2F</url>
+      <content type="text"><![CDATA[安装httpd 2.21234cd ~/opt/apache/httpd/httpd2.2.31./configure --prefix=/usr/local/httpd2.2.31sudo make sudo make install 安装httpd 2.4下载apr和apr-utilDownload - The Apache Portable Runtime Project选择最新的下载。 安装apr 12./configure --prefix=/usr/local/aprsudo make &amp; make install 安装apr-util 12./configure --prefix=/usr/local/apr-util --with-apr=/usr/local/apr/sudo make &amp; make install 安装httpd 1./configure --prefix=/usr/local/httpd2.4.20 --sysconfdir=/etc/httpd24 --enable-so --enable-ssl --enable-cgi --enable-rewrite --with-zlib --with-pcre --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr-util/ --enable-modules=most --enable-mpms-shared=all --with-mpm=event 配置httpd服务 123456cp /usr/local/httpd2.4.20/bin/apachectl /etc/init.d/httpdvim /etc/init.d/httpd;; 在头部添加# chkconfig: 2345 90 90 chkconfig --add httpd chkconfig --level 345 httpd on 这时就可以使用sudo service httpd start命令启动http服务了.如果失败重启下电脑重新执行下命令 编译参数参考:apache编译参数]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[handsontable 自定义右键菜单]]></title>
+      <url>%2F2016%2F05%2F24%2Fhandsontable-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%2F</url>
+      <content type="text"><![CDATA[12345678910111213141516171819202122232425262728293031323334353637383940414243hot1.updateSettings(&#123; contextMenu: &#123; callback: function (key, options) &#123; console.log(key); if (key === &apos;ColType&apos;) &#123; setTimeout(function () &#123; //timeout is used to make sure the menu collapsed before alert is shown alert(&quot;This is a context menu with default and custom options mixed&quot;); &#125;, 100); &#125; &#125;, items: &#123; // 上面插入一行 &quot;row_above&quot;: &#123;&#125;, // 下面插入一行 &quot;row_below&quot;: &#123;&#125;, &quot;hsep1&quot;: &quot;---------&quot;, // 左侧插入一列 &quot;col_left&quot;:&#123;&#125;, // 右侧插入一列 &quot;col_right&quot;:&#123;&#125;, &quot;hsep2&quot;: &quot;---------&quot;, // 删除行 &quot;remove_row&quot;:&#123;&#125;, // 删除列 &quot;remove_col&quot;:&#123;&#125;, &quot;hsep3&quot;: &quot;---------&quot;, &quot;undo&quot;:&#123;&#125;, &quot;redo&quot;:&#123;&#125;, &quot;make_read_only&quot;: &#123;&#125;, // 单元格对齐方式 //&quot;alignment&quot;: &#123;&#125;, &quot;commentsAddEdit&quot;: &#123;&#125;, // 合并单元格菜单 &quot;mergeCells&quot;: &#123;&#125;, &quot;hsep2&quot;: &quot;---------&quot;, // 自定义菜单 &quot;ColType&quot;: &#123; name: &apos;ColType&apos;, &#125; &#125; &#125;&#125;);]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[My favorite linux tools]]></title>
+      <url>%2F2016%2F05%2F23%2FMy-favorite-linux-tools%2F</url>
+      <content type="text"><![CDATA[iptux局域网传输 飞鸽 Thunderbird邮件客户端 Thunderbird sambaSamba - opening windows to a wider world局域网共享 firefox浏览器 xmind思维导图 fcitx输入法 mplayer播放器 Nutstore坚果云 rdesktop远程连接 latex生成pdf ktorrent磁力连接下载器 Puddletag音乐标签编辑工具Linux下MP3标签编辑工具Puddletag 十大好用linux实用工具推荐小工具集合 超酷的 Linux/Unix 终端/控制台工具小集合 - 开源中国社区]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[My favorite gnome-shell-exception]]></title>
+      <url>%2F2016%2F05%2F22%2FMy-favorite-gnome-shell-exception%2F</url>
+      <content type="text"><![CDATA[Rss feedRss 阅读 Openweather天气 Places Status indicator快速访问资源 Pomodoro番茄时钟 Public ip address外网IP User themes自定义样式 Web search dialogweb搜索 system-monitor系统管理 Emacs managerEmacs server管理 Add user and host name to panel显示用户名和域名]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[My favorite Eclipse Plugins]]></title>
+      <url>%2F2016%2F05%2F21%2FMy-favorite-Eclipse-Plugins%2F</url>
+      <content type="text"><![CDATA[eclipse theme coloreclipse样式插件iteman Emacs - Eclipse Color Themes emacs+emacs 快捷键插件install:eclipse marketplactsearch emacs+installEmacs+ | Eclipse Plugins, Bundles and Products - Eclipse Marketplace]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[My favorite Firefox Addons]]></title>
+      <url>%2F2016%2F05%2F21%2FCommon-Firefox-Addons%2F</url>
+      <content type="text"><![CDATA[firebug调试插件 fireftpftp插件 微信弹幕 Copy the name and URL of a link or a Tab复制url和标题 Text Encoding修改页面编码 Easy Screenshot截图工具]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[阿里云ECS搭建vsftpd服务,部属hexo]]></title>
+      <url>%2F2016%2F05%2F21%2F%E9%98%BF%E9%87%8C%E4%BA%91%E6%90%AD%E5%BB%BAvsftpd%E6%9C%8D%E5%8A%A1-%E9%83%A8%E5%B1%9Ehexo%2F</url>
+      <content type="text"><![CDATA[安装vsftpd服务yum install vsftpd 配置vsftpd.conf配置文档英文地址: vsftpd配置中文地址: vsftpd配置 新建hexo用户useradd -d /home/ftp -g ftp -s /sbin/nologin ftpuser -p password 启动vsftpd服务systemctl start vsftpd.service]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[handsontable组件和jqwidgets(jqxdragdrop组件)在一个页面产生调整宽高bug]]></title>
+      <url>%2F2016%2F05%2F19%2Fhandsontable%20and%20jqwidgets-jqxdragdropbug%2F</url>
+      <content type="text"><![CDATA[修改handsontable.full.jshandsontable绑定的”mouseup”事件，监听区域默认是window区域太大。引起冲突。把监听区域改为Elemant]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[easyui custom tags]]></title>
+      <url>%2F2016%2F05%2F19%2Feasyui-custom-tags%2F</url>
+      <content type="text"><![CDATA[easyui自定义标签 datagrid edit combobox 手动输入保存不上问题解决办法 使用onEndEdit事件（该事件可以获取到editor对象，onAfterEdit事件获取不到Editor对象） 通过editor拿到输入数据并保存。 1234567891011int ci = 0;for(Column col : columnList )&#123; for(Combobox cbb : col.getCombobox())&#123; if(cbb != null)&#123; str += &quot;var ed&quot; + ci + &quot; = $j(\&quot;#&quot;+RandomNumber+&quot;\&quot;).datagrid(\&quot;getEditor\&quot;,&#123;index:rowIndex,field:\&quot;&quot;+col.getField()+&quot;\&quot;&#125;);&quot;; str += &quot;var val&quot; + ci + &quot; = ed&quot; + ci + &quot;.target.combobox(&apos;getText&apos;);&quot;; str += &quot;rowData[\&quot;&quot; + col.getField() + &quot;\&quot;] = val&quot; + ci + &quot;;&quot;; ci++; &#125; &#125;&#125;]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[install debian gnome chinese-fonts]]></title>
+      <url>%2F2016%2F05%2F19%2Finstall-debian-gnome-chinese-fonts%2F</url>
+      <content type="text"><![CDATA[首先获得一套字体库（Google一下一大把,或者在windows下复制一份”c://windows/fonts”）。 在/usr/share/fonts目录下建立一个子目录，例如win，命令如下： sudo mkdir /usr/share/fonts/win 将字体文件复制到该目录下，使用命令：先挂载u盘mount /dev/sdb1 /mnt然后复制 sudo cp msyh.ttf /usr/share/fonts/win/ 建立字体索引信息，更新字体缓存： 1234cd /usr/share/fonts/winsudo mkfontscale sudo mkfontdir sudo fc-cache -fv 至此，字体已经安装完毕！]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[博客搭建完成]]></title>
+      <url>%2F2016%2F05%2F17%2Findex%2F</url>
+      <content type="text"><![CDATA[博客搭建完成，使用hexo,github pages,搭建 主要用来记录的一些自己的一些所见，所想。整理资料中—永远保持快乐]]></content>
+    </entry>
+
+    
+  
+  
+</search>
