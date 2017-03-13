@@ -413,11 +413,10 @@
       
         
           
-            <p>** 安装七牛云qshell命令行工具</p>
-<ol>
-<li><p>下载<br>wget ‘<a href="http://devtools.qiniu.com/qshell-v1.8.1.zip" target="_blank" rel="external">http://devtools.qiniu.com/qshell-v1.8.1.zip</a>‘</p>
+            <h1 id="安装七牛云qshell命令行工具"><a href="#安装七牛云qshell命令行工具" class="headerlink" title="安装七牛云qshell命令行工具"></a>安装七牛云qshell命令行工具</h1><ol>
+<li><p>下载<br><code>wget &#39;http://devtools.qiniu.com/qshell-v1.8.1.zip&#39;</code></p>
 </li>
-<li><p>解压文件<br>unzip qshell-v1.8.1.zip</p>
+<li><p>解压文件<br><code>unzip qshell-v1.8.1.zip</code></p>
 </li>
 <li>找到对应操作系统版本文件，复制到<code>~/opt/qshell</code>文件夹下</li>
 <li>配置七牛密钥<ol>
@@ -552,7 +551,7 @@
 
       
         
-          <p><em>系统信息</em><br>   <code>arch</code> 显示机器的处理器架构(1)<br>   <code>uname -m</code> 显示机器的处理器架构(2)<br>   <code>uname -r</code> 显示正在使用的内核版本<br>   <code>dmidecode -q</code> 显示硬件系统部件 - (SMBIOS / DMI)<br>   <code>hdparm -i /dev/hda</code> 罗列一个磁盘的架构特性<br>   <code>hdparm -tT /dev/sda</code> 在磁盘上执行测试性读取操作<br>   <code>cat /proc/cpuinfo</code> 显示 CPU info 的信息<br>   <code>cat /proc/interrupts</code> 显示中断<br>   <code>cat /proc/meminfo</code> 校验内存使用<br>   <code>cat /proc/swaps</code> 显示哪些 swap 被使用<br>   <code>cat /proc/version</code> 显示内核的版本<br>   <code>cat /proc/net/dev</code> 显示网络适配器及统计<br>   <code>cat /proc/mounts</code> 显示已加载的文件系统<br>   <code>lspci -tv</code> 罗列 PCI 设备<br>   <code>lsusb -tv</code> 显示 USB 设备<br>   <code>date</code> 显示系统日期<br>   <code>cal 2007</code> 显示 2007 年的日历表<br>   <code>date 041217002007.00</code> 设置日期和时间 - 月日时分年.秒<br>   <code>clock -w</code> 将时间修改保存到 BIOS<br>
+          <h1 id="系统信息"><a href="#系统信息" class="headerlink" title="系统信息"></a>系统信息</h1><p>   <code>arch</code> 显示机器的处理器架构(1)<br>   <code>uname -m</code> 显示机器的处理器架构(2)<br>   <code>uname -r</code> 显示正在使用的内核版本<br>   <code>dmidecode -q</code> 显示硬件系统部件 - (SMBIOS / DMI)<br>   <code>hdparm -i /dev/hda</code> 罗列一个磁盘的架构特性<br>   <code>hdparm -tT /dev/sda</code> 在磁盘上执行测试性读取操作<br>   <code>cat /proc/cpuinfo</code> 显示 CPU info 的信息<br>   <code>cat /proc/interrupts</code> 显示中断<br>   <code>cat /proc/meminfo</code> 校验内存使用<br>   <code>cat /proc/swaps</code> 显示哪些 swap 被使用<br>   <code>cat /proc/version</code> 显示内核的版本<br>   <code>cat /proc/net/dev</code> 显示网络适配器及统计<br>   <code>cat /proc/mounts</code> 显示已加载的文件系统<br>   <code>lspci -tv</code> 罗列 PCI 设备<br>   <code>lsusb -tv</code> 显示 USB 设备<br>   <code>date</code> 显示系统日期<br>   <code>cal 2007</code> 显示 2007 年的日历表<br>   <code>date 041217002007.00</code> 设置日期和时间 - 月日时分年.秒<br>   <code>clock -w</code> 将时间修改保存到 BIOS<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2016/08/22/linux-常用命令/#more" rel="contents">
@@ -1118,11 +1117,9 @@
       
         
           <ol>
-<li><p>下载php7</p>
-</li>
-<li><p>解压</p>
-</li>
-<li><p>进入目录<code>./confirure</code><br>报错<br><img src="http://img.sourcod.com/debian8-安装-php_16-06-01_15:03:30.png" alt="debian8-安装-php_16-06-01_15:03:30.png"><br>我们安装libxml2&amp;libxml2-dev<br><code>sudo apt-get install libxml2 libxml2-dev</code><br>安装完执行<code>./configure --prefix=/usr/local/php</code><br><code>sudo make &amp; sudo make install</code><br>等待安装结束!OK!</p>
+<li>下载php7<br><code>wget http://jp2.php.net/distributions/php-7.1.2.tar.gz</code></li>
+<li>解压<br><code>tar -zxvf php-7.1.2.tar.gz</code></li>
+<li>进入目录<code>./confirure</code><br>报错<br><img src="http://img.sourcod.com/debian8-安装-php_16-06-01_15:03:30.png" alt="debian8-安装-php_16-06-01_15:03:30.png"><br>我们安装libxml2&amp;libxml2-dev<br><code>sudo apt-get install libxml2 libxml2-dev</code><br>安装完执行<code>./configure --prefix=/usr/local/php</code><br><code>sudo make &amp; sudo make install</code><br>等待安装结束!OK!
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2016/05/31/debian8-安装-php/#more" rel="contents">
@@ -1749,7 +1746,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-count">22</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

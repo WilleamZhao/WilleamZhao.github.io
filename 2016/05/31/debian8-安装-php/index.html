@@ -89,29 +89,23 @@
 
 
 
-<meta name="description" content="下载php7
-
-解压
-
-进入目录./confirure报错我们安装libxml2&amp;amp;libxml2-devsudo apt-get install libxml2 libxml2-dev安装完执行./configure --prefix=/usr/local/phpsudo make &amp;amp; sudo make install等待安装结束!OK!">
+<meta name="description" content="下载php7wget http://jp2.php.net/distributions/php-7.1.2.tar.gz
+解压tar -zxvf php-7.1.2.tar.gz
+进入目录./confirure报错我们安装libxml2&amp;amp;libxml2-devsudo apt-get install libxml2 libxml2-dev安装完执行./configure --prefix">
 <meta property="og:type" content="article">
 <meta property="og:title" content="debian8 安装 php">
 <meta property="og:url" content="http://sourcod.com/2016/05/31/debian8-安装-php/index.html">
 <meta property="og:site_name" content="Sourcod">
-<meta property="og:description" content="下载php7
-
-解压
-
-进入目录./confirure报错我们安装libxml2&amp;amp;libxml2-devsudo apt-get install libxml2 libxml2-dev安装完执行./configure --prefix=/usr/local/phpsudo make &amp;amp; sudo make install等待安装结束!OK!">
+<meta property="og:description" content="下载php7wget http://jp2.php.net/distributions/php-7.1.2.tar.gz
+解压tar -zxvf php-7.1.2.tar.gz
+进入目录./confirure报错我们安装libxml2&amp;amp;libxml2-devsudo apt-get install libxml2 libxml2-dev安装完执行./configure --prefix">
 <meta property="og:image" content="http://img.sourcod.com/debian8-安装-php_16-06-01_15:03:30.png">
-<meta property="og:updated_time" content="2017-03-13T04:29:40.594Z">
+<meta property="og:updated_time" content="2017-03-13T07:55:30.747Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="debian8 安装 php">
-<meta name="twitter:description" content="下载php7
-
-解压
-
-进入目录./confirure报错我们安装libxml2&amp;amp;libxml2-devsudo apt-get install libxml2 libxml2-dev安装完执行./configure --prefix=/usr/local/phpsudo make &amp;amp; sudo make install等待安装结束!OK!">
+<meta name="twitter:description" content="下载php7wget http://jp2.php.net/distributions/php-7.1.2.tar.gz
+解压tar -zxvf php-7.1.2.tar.gz
+进入目录./confirure报错我们安装libxml2&amp;amp;libxml2-devsudo apt-get install libxml2 libxml2-dev安装完执行./configure --prefix">
 <meta name="twitter:image" content="http://img.sourcod.com/debian8-安装-php_16-06-01_15:03:30.png">
 
 
@@ -444,14 +438,10 @@
 
       
         <ol>
-<li><p>下载php7</p>
-</li>
-<li><p>解压</p>
-</li>
-<li><p>进入目录<code>./confirure</code><br>报错<br><img src="http://img.sourcod.com/debian8-安装-php_16-06-01_15:03:30.png" alt="debian8-安装-php_16-06-01_15:03:30.png"><br>我们安装libxml2&amp;libxml2-dev<br><code>sudo apt-get install libxml2 libxml2-dev</code><br>安装完执行<code>./configure --prefix=/usr/local/php</code><br><code>sudo make &amp; sudo make install</code><br>等待安装结束!OK!</p>
-<a id="more"></a>
-<p>添加模块</p>
-</li>
+<li>下载php7<br><code>wget http://jp2.php.net/distributions/php-7.1.2.tar.gz</code></li>
+<li>解压<br><code>tar -zxvf php-7.1.2.tar.gz</code></li>
+<li>进入目录<code>./confirure</code><br>报错<br><img src="http://img.sourcod.com/debian8-安装-php_16-06-01_15:03:30.png" alt="debian8-安装-php_16-06-01_15:03:30.png"><br>我们安装libxml2&amp;libxml2-dev<br><code>sudo apt-get install libxml2 libxml2-dev</code><br>安装完执行<code>./configure --prefix=/usr/local/php</code><br><code>sudo make &amp; sudo make install</code><br>等待安装结束!OK!<a id="more"></a>
+添加模块</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">cd ~/opt/php/php-7.0.7/</div><div class="line">cd ./ext/mbstring</div><div class="line">/usr/local/php/php-7.0.7/bin/phpize</div><div class="line">./configure –with-php-config=/usr/local/php/php-7.0.7/bin/php-config</div><div class="line">make</div><div class="line">make install</div></pre></td></tr></table></figure>
 <p>php参数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line">./configure --prefix=/usr/local/php/php-5.3.5 \</div><div class="line">--with-config-file-path=/usr/local/php/php-5.3.5/etc \</div><div class="line">--with-config-file-scan-dir=/usr/local/php/php-5.3.5/etc/conf.d \</div><div class="line">--with-mcrypt \</div><div class="line">--with-mhash \</div><div class="line">--with-mysqli=mysqlnd \</div><div class="line">--with-pdo-mysql=mysqlnd \</div><div class="line">--with-gd \</div><div class="line">--with-iconv \</div><div class="line">--with-zlib \</div><div class="line">--with-curl \</div><div class="line">--with-jpeg-dir \</div><div class="line">--with-freetype-dir \</div><div class="line">--with-apxs2=/usr/local/apache/bin/apxs \</div><div class="line">--with-openssl \</div><div class="line">--with-xmlrpc \</div><div class="line">--with-gettext \</div><div class="line">--with-fpm-user=nginx \</div><div class="line">--with-fpm-group=nginx \</div><div class="line">--enable-fpm \</div><div class="line">--enable-cgi \</div><div class="line">--enable-xml \</div><div class="line">--enable-bcmath \</div><div class="line">--enable-inline-optimization \</div><div class="line">--enable-mbregex \</div><div class="line">--enable-mbstring \</div><div class="line">--enable-ftp \</div><div class="line">--enable-gd-native-ttf \</div><div class="line">--enable-pcntl \</div><div class="line">--enable-sockets \</div><div class="line">--enable-sysvmsg \</div><div class="line">--enable-sysvshm \</div><div class="line">--enable-shmop \</div><div class="line">--enable-zip \</div><div class="line">--enable-soap \</div><div class="line">--enable-session \</div><div class="line">--enable-opcache \</div><div class="line">--enable-cli</div><div class="line"></div><div class="line">make &amp;&amp; make install</div></pre></td></tr></table></figure></p>
@@ -611,7 +601,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-count">22</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
