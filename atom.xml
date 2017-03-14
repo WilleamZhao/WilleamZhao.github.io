@@ -90,9 +90,9 @@
     
       <category term="linux" scheme="http://sourcod.com/tags/linux/"/>
     
-      <category term="maven" scheme="http://sourcod.com/tags/maven/"/>
-    
       <category term="java" scheme="http://sourcod.com/tags/java/"/>
+    
+      <category term="maven" scheme="http://sourcod.com/tags/maven/"/>
     
       <category term="ubuntu" scheme="http://sourcod.com/tags/ubuntu/"/>
     
