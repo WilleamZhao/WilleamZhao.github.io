@@ -36,6 +36,37 @@
   </entry>
   
   <entry>
+    <title>配置emacs hexo github page aliyun oss博客环境</title>
+    <link href="http://sourcod.com/2017/03/14/%E9%85%8D%E7%BD%AEemacs%20hexo%20github%20page%20aliyun%20oss%E5%8D%9A%E5%AE%A2%E7%8E%AF%E5%A2%83/"/>
+    <id>http://sourcod.com/2017/03/14/配置emacs hexo github page aliyun oss博客环境/</id>
+    <published>2017-03-13T16:00:00.000Z</published>
+    <updated>2017-03-16T09:53:22.467Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;安装hexo&quot;&gt;&lt;a href=&quot;#安装hexo&quot; class=&quot;headerlink&quot; title=&quot;安装hexo&quot;&gt;&lt;/a&gt;安装hexo&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;安装node npm&lt;br&gt;由于我的电脑是ubuntu&lt;br&gt;可以使用 apt方试安装&lt;code&gt;sudo apt-get install nodejs&lt;/code&gt;&lt;br&gt;或者编译安装，这里不详系介绍&lt;br&gt;（※我使用的编译源码方试安装，这种方试安装的是最新版※）&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;安装hexo&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;npm install hexo-cli -g &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;hexo init blog&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;cd blog&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;npm install&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;hexo server&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;安装git&lt;br&gt;同1;&lt;br&gt;&lt;code&gt;sudo apt-get install git&lt;/code&gt;&lt;br&gt;编译安装可以看这里&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://git-scm.com/book/zh/v1/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git#%E4%BB%8E%E6%BA%90%E4%BB%A3%E7%A0%81%E5%AE%89%E8%A3%85&quot;&gt;编译安装git&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="blog" scheme="http://sourcod.com/categories/blog/"/>
+    
+    
+      <category term="aliyun" scheme="http://sourcod.com/tags/aliyun/"/>
+    
+      <category term="hexo" scheme="http://sourcod.com/tags/hexo/"/>
+    
+      <category term="emacs" scheme="http://sourcod.com/tags/emacs/"/>
+    
+  </entry>
+  
+  <entry>
     <title>emacs集成七牛云存储</title>
     <link href="http://sourcod.com/2016/10/23/emacs%E9%9B%86%E6%88%90%E4%B8%83%E7%89%9B%E4%BA%91%E5%AD%98%E5%82%A8/"/>
     <id>http://sourcod.com/2016/10/23/emacs集成七牛云存储/</id>
@@ -50,9 +81,9 @@
     </summary>
     
     
-      <category term="linux" scheme="http://sourcod.com/tags/linux/"/>
-    
       <category term="emacs" scheme="http://sourcod.com/tags/emacs/"/>
+    
+      <category term="linux" scheme="http://sourcod.com/tags/linux/"/>
     
       <category term="blog" scheme="http://sourcod.com/tags/blog/"/>
     
@@ -436,28 +467,6 @@
     
     
       <category term="linux" scheme="http://sourcod.com/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>handsontable组件和jqwidgets(jqxdragdrop组件)在一个页面产生调整宽高bug</title>
-    <link href="http://sourcod.com/2016/05/19/handsontable%20and%20jqwidgets-jqxdragdropbug/"/>
-    <id>http://sourcod.com/2016/05/19/handsontable and jqwidgets-jqxdragdropbug/</id>
-    <published>2016-05-19T11:06:45.000Z</published>
-    <updated>2017-03-13T04:29:40.594Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;修改handsontable.full.js&lt;br&gt;handsontable绑定的”mouseup”事件，监听区域默认是window区域太大。引起冲突。&lt;br&gt;把监听区域改为Elemant&lt;br&gt;&lt;img src=&quot;http://img.sourcod.com/handso
-    
-    </summary>
-    
-      <category term="js" scheme="http://sourcod.com/categories/js/"/>
-    
-    
-      <category term="handsontable" scheme="http://sourcod.com/tags/handsontable/"/>
-    
-      <category term="jqwidgets" scheme="http://sourcod.com/tags/jqwidgets/"/>
     
   </entry>
   
