@@ -110,7 +110,7 @@
 <meta property="og:image" content="http://image.sourcod.com/hexo/test_hexo_buffer.png">
 <meta property="og:image" content="http://image.sourcod.com/hexo/test_配置sysproperties.png">
 <meta property="og:image" content="http://image.sourcod.com/hexo/test_20170316_165446.png">
-<meta property="og:updated_time" content="2017-03-16T09:53:22.467Z">
+<meta property="og:updated_time" content="2017-03-16T10:02:53.037Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="配置emacs hexo github page aliyun oss博客环境">
 <meta name="twitter:description" content="安装hexo
@@ -474,22 +474,25 @@
 <li>配置conf/sys.properties<br><code>vi conf/sys.properties</code><br><img src="http://image.sourcod.com/hexo/test_配置sysproperties.png" alt="test_配置sysproperties.png"><br>※跟具个人实际情况配置</li>
 <li><p>运行</p>
 <ol>
-<li>启动服务<br><code>nohup java -Dskip_exist_file=false -jar /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/bin/ossimport2.jar -c /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/conf/sys.properties start &gt; /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/logs/ossimport2.log 2&gt;&amp;1 &amp;</code></li>
+<li><p>启动服务</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nohup java -Dskip_exist_file=false -jar /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/bin/ossimport2.jar -c /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/conf/sys.properties start &gt; /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/logs/ossimport2.log 2&gt;&amp;1 &amp;</div></pre></td></tr></table></figure>
+</li>
 <li><p>编辑任务描述文件<br><code>vi local_job.cfg</code><br><img src="http://image.sourcod.com/hexo/test_20170316_165446.png" alt="test_20170316_165446.png"></p>
 </li>
-<li><p>执行任务<br><code>java -jar /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/bin/ossimport2.jar -c /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/conf/sys.properties submit /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/local_job.cfg</code></p>
+<li><p>执行任务</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">java -jar /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/bin/ossimport2.jar -c /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/conf/sys.properties submit /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/local_job.cfg</div></pre></td></tr></table></figure>
 </li>
-<li><p>查看状态<br><code>java -jar /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/bin/ossimport2.jar -c /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/conf/sys.properties  stat detail</code></p>
+<li><p>查看状态</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">java -jar /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/bin/ossimport2.jar -c /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/conf/sys.properties  stat detail</div></pre></td></tr></table></figure>
+</li>
+</ol>
 </li>
 <li><p>把服务写到开机启动脚本里</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">mkdir -p ~/opt/shell/aliyun/oss/</div><div class="line">cd ~/opt/shell/aliyun/oss</div><div class="line">vi ossimport2.sh</div><div class="line">#!/bin/bash</div><div class="line"># 启动服务</div><div class="line">nohup java -Dskip_exist_file=false -jar /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/bin/ossimport2.jar -c /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/conf/sys.properties start &gt; /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/logs/ossimport2.log 2&gt;&amp;1 &amp;</div><div class="line"># 启动任务</div><div class="line">java -jar /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/bin/ossimport2.jar -c /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/conf/sys.properties submit /home/willeam/software/aliyun/oss/ossimport-v2.1-linux/local_job.cfg</div><div class="line"></div><div class="line">sudo vi /etc/rc.local</div><div class="line">/home/willeam/opt/shell/aliyun/oss/ossimport2.sh</div></pre></td></tr></table></figure>
+</li>
+</ol>
 <p>图床搞定</p>
-<p>※停止服务</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ps axu | grep &quot;ossimport2.jar.* start&quot; | grep -v grep | awk &apos;&#123;print &quot;kill -9 &quot;$2&#125;&apos; | bash</div><div class="line">java -jar $work_dir/bin/ossimport2.jar  -c $work_dir/conf/sys.properties clean hexo</div></pre></td></tr></table></figure>
-</li>
-</ol>
-</li>
-</ol>
+<p>※停止服务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ps axu | grep &quot;ossimport2.jar.* start&quot; | grep -v grep | awk &apos;&#123;print &quot;kill -9 &quot;$2&#125;&apos; | bash</div><div class="line">java -jar $work_dir/bin/ossimport2.jar  -c $work_dir/conf/sys.properties clean hexo</div></pre></td></tr></table></figure></p>
 <h1 id="创建github仓库"><a href="#创建github仓库" class="headerlink" title="创建github仓库"></a>创建github仓库</h1><p>※名称必需是 username.github.io</p>
 <blockquote>
 <p>参照: <a href="https://pages.github.com/" target="_blank" rel="external">github page官网</a></p>

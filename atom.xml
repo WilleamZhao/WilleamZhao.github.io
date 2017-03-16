@@ -40,7 +40,7 @@
     <link href="http://sourcod.com/2017/03/14/%E9%85%8D%E7%BD%AEemacs%20hexo%20github%20page%20aliyun%20oss%E5%8D%9A%E5%AE%A2%E7%8E%AF%E5%A2%83/"/>
     <id>http://sourcod.com/2017/03/14/配置emacs hexo github page aliyun oss博客环境/</id>
     <published>2017-03-13T16:00:00.000Z</published>
-    <updated>2017-03-16T09:53:22.467Z</updated>
+    <updated>2017-03-16T10:02:53.037Z</updated>
     
     <summary type="html">
     
@@ -121,9 +121,9 @@
     
       <category term="linux" scheme="http://sourcod.com/tags/linux/"/>
     
-      <category term="java" scheme="http://sourcod.com/tags/java/"/>
-    
       <category term="maven" scheme="http://sourcod.com/tags/maven/"/>
+    
+      <category term="java" scheme="http://sourcod.com/tags/java/"/>
     
       <category term="ubuntu" scheme="http://sourcod.com/tags/ubuntu/"/>
     
